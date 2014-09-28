@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="Microsoft.Research.Peloponnese.AzureCluster" >
+      <HintPath>$(MSBuildThisFileDirectory)..\notlib\net45\Microsoft.Research.Peloponnese.AzureCluster.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.Peloponnese.YarnCluster" >
+      <HintPath>$(MSBuildThisFileDirectory)..\notlib\net45\Microsoft.Research.Peloponnese.YarnCluster.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalUsingDirectories>$(MSBuildThisFileDirectory)..\notlib\net45;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,131 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentProcessManager", "Server\PersistentProcessManager.csproj", "{E6C15BBD-690F-4B98-BED9-46FA0FD5826A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{768E3AFE-9831-4071-8EF4-B7BAA8694A23} = {768E3AFE-9831-4071-8EF4-B7BAA8694A23}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarnLauncher", "YarnLauncher\YarnLauncher.csproj", "{D6FB6AA2-0E03-4BA4-934C-A1E304B1E1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarnMapLauncher", "YarnMapLauncher\YarnMapLauncher.csproj", "{6CE50AE4-8BF3-46D4-A265-7378D3B234A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureLogDumper", "AzureLogDumper\AzureLogDumper.csproj", "{28CAE68C-24AB-422D-AA11-7F34FCF62F0F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63DF64B0-F610-41D7-87EE-1EDB32B33260} = {63DF64B0-F610-41D7-87EE-1EDB32B33260}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarnCluster", "YarnCluster\YarnCluster.csproj", "{768E3AFE-9831-4071-8EF4-B7BAA8694A23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCluster", "AzureCluster\AzureCluster.csproj", "{63DF64B0-F610-41D7-87EE-1EDB32B33260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{F169510D-87A7-4329-A095-4BC40DB7C38D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HadoopBridge", "Hadoop\HadoopBridge\HadoopBridge.vcxproj", "{7422355D-D13D-44AA-B55C-1681CF7DA243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hadoop", "Hadoop\Hdfs\Hadoop.csproj", "{AC500C94-582B-4B7B-9372-DC3AAD063683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{03DB5BF6-94C6-4E70-8800-AF882EF862AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorage", "AzureStorage\AzureStorage.csproj", "{C594EB23-974E-4FF6-9C43-2FB2FF020350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHdfs", "WebHdfs\WebHdfs.csproj", "{05A15668-E82C-4E9E-A8BE-CC24E5C29C99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuSpec", "NuSpec", "{A1204255-A839-4AC5-87BD-FBD911C375A5}"
+	ProjectSection(SolutionItems) = preProject
+		AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.nuspec = AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.nuspec
+		AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.props = AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.props
+		AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.targets = AzureStorage\Microsoft.Research.Peloponnese.AzureStorage.targets
+		Microsoft.Research.Peloponnese.Client.nuspec = Microsoft.Research.Peloponnese.Client.nuspec
+		Microsoft.Research.Peloponnese.Client.props = Microsoft.Research.Peloponnese.Client.props
+		Microsoft.Research.Peloponnese.Client.targets = Microsoft.Research.Peloponnese.Client.targets
+		Hadoop\Microsoft.Research.Peloponnese.Hadoop.nuspec = Hadoop\Microsoft.Research.Peloponnese.Hadoop.nuspec
+		Hadoop\Microsoft.Research.Peloponnese.Hadoop.props = Hadoop\Microsoft.Research.Peloponnese.Hadoop.props
+		Hadoop\Microsoft.Research.Peloponnese.Hadoop.targets = Hadoop\Microsoft.Research.Peloponnese.Hadoop.targets
+		Shared\Microsoft.Research.Peloponnese.Shared.nuspec = Shared\Microsoft.Research.Peloponnese.Shared.nuspec
+		Shared\Microsoft.Research.Peloponnese.Shared.props = Shared\Microsoft.Research.Peloponnese.Shared.props
+		Shared\Microsoft.Research.Peloponnese.Shared.targets = Shared\Microsoft.Research.Peloponnese.Shared.targets
+		Utils\Microsoft.Research.Peloponnese.Utils.nuspec = Utils\Microsoft.Research.Peloponnese.Utils.nuspec
+		Utils\Microsoft.Research.Peloponnese.Utils.props = Utils\Microsoft.Research.Peloponnese.Utils.props
+		Utils\Microsoft.Research.Peloponnese.Utils.targets = Utils\Microsoft.Research.Peloponnese.Utils.targets
+		WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.nuspec = WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.nuspec
+		WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.props = WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.props
+		WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.targets = WebHdfs\Microsoft.Research.Peloponnese.WebHdfs.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyLister", "DependencyLister\DependencyLister.csproj", "{95D71783-45EE-4A56-B4DF-A0C656AF3224}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F169510D-87A7-4329-A095-4BC40DB7C38D} = {F169510D-87A7-4329-A095-4BC40DB7C38D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{76155298-FD9C-4AAE-BB6A-619FE936DECE}"
+	ProjectSection(SolutionItems) = preProject
+		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+		SolutionUtils\UpdateNuGetVersions.cs = SolutionUtils\UpdateNuGetVersions.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6C15BBD-690F-4B98-BED9-46FA0FD5826A}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{E6C15BBD-690F-4B98-BED9-46FA0FD5826A}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{E6C15BBD-690F-4B98-BED9-46FA0FD5826A}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{E6C15BBD-690F-4B98-BED9-46FA0FD5826A}.Release|Mixed Platforms.Build.0 = Release|x64
+		{D6FB6AA2-0E03-4BA4-934C-A1E304B1E1F0}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{D6FB6AA2-0E03-4BA4-934C-A1E304B1E1F0}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{D6FB6AA2-0E03-4BA4-934C-A1E304B1E1F0}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{D6FB6AA2-0E03-4BA4-934C-A1E304B1E1F0}.Release|Mixed Platforms.Build.0 = Release|x64
+		{6CE50AE4-8BF3-46D4-A265-7378D3B234A9}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{6CE50AE4-8BF3-46D4-A265-7378D3B234A9}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{6CE50AE4-8BF3-46D4-A265-7378D3B234A9}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{6CE50AE4-8BF3-46D4-A265-7378D3B234A9}.Release|Mixed Platforms.Build.0 = Release|x64
+		{28CAE68C-24AB-422D-AA11-7F34FCF62F0F}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{28CAE68C-24AB-422D-AA11-7F34FCF62F0F}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{28CAE68C-24AB-422D-AA11-7F34FCF62F0F}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{28CAE68C-24AB-422D-AA11-7F34FCF62F0F}.Release|Mixed Platforms.Build.0 = Release|x64
+		{768E3AFE-9831-4071-8EF4-B7BAA8694A23}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{768E3AFE-9831-4071-8EF4-B7BAA8694A23}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{768E3AFE-9831-4071-8EF4-B7BAA8694A23}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{768E3AFE-9831-4071-8EF4-B7BAA8694A23}.Release|Mixed Platforms.Build.0 = Release|x64
+		{63DF64B0-F610-41D7-87EE-1EDB32B33260}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{63DF64B0-F610-41D7-87EE-1EDB32B33260}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{63DF64B0-F610-41D7-87EE-1EDB32B33260}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{63DF64B0-F610-41D7-87EE-1EDB32B33260}.Release|Mixed Platforms.Build.0 = Release|x64
+		{F169510D-87A7-4329-A095-4BC40DB7C38D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F169510D-87A7-4329-A095-4BC40DB7C38D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F169510D-87A7-4329-A095-4BC40DB7C38D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F169510D-87A7-4329-A095-4BC40DB7C38D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7422355D-D13D-44AA-B55C-1681CF7DA243}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{7422355D-D13D-44AA-B55C-1681CF7DA243}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{7422355D-D13D-44AA-B55C-1681CF7DA243}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7422355D-D13D-44AA-B55C-1681CF7DA243}.Release|Mixed Platforms.Build.0 = Release|x64
+		{AC500C94-582B-4B7B-9372-DC3AAD063683}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{AC500C94-582B-4B7B-9372-DC3AAD063683}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{AC500C94-582B-4B7B-9372-DC3AAD063683}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{AC500C94-582B-4B7B-9372-DC3AAD063683}.Release|Mixed Platforms.Build.0 = Release|x64
+		{03DB5BF6-94C6-4E70-8800-AF882EF862AB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{03DB5BF6-94C6-4E70-8800-AF882EF862AB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{03DB5BF6-94C6-4E70-8800-AF882EF862AB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{03DB5BF6-94C6-4E70-8800-AF882EF862AB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C594EB23-974E-4FF6-9C43-2FB2FF020350}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C594EB23-974E-4FF6-9C43-2FB2FF020350}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C594EB23-974E-4FF6-9C43-2FB2FF020350}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C594EB23-974E-4FF6-9C43-2FB2FF020350}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{05A15668-E82C-4E9E-A8BE-CC24E5C29C99}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{05A15668-E82C-4E9E-A8BE-CC24E5C29C99}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{05A15668-E82C-4E9E-A8BE-CC24E5C29C99}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{05A15668-E82C-4E9E-A8BE-CC24E5C29C99}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{95D71783-45EE-4A56-B4DF-A0C656AF3224}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{95D71783-45EE-4A56-B4DF-A0C656AF3224}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{95D71783-45EE-4A56-B4DF-A0C656AF3224}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{95D71783-45EE-4A56-B4DF-A0C656AF3224}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

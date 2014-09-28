@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Research.Peloponnese.Utils</id>
+    <version>0.8.0-beta</version>
+    <title>Peloponnese - Utitity class for lightweight process manager for YARN</title>
+    <authors>bigdatadev@microsoft.com</authors>
+    <owners>bigdatadev@microsoft.com,Microsoft</owners>
+    <licenseUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/Peloponnese_license.txt</licenseUrl>
+    <projectUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Utitity classes for the Peloponnese Process Manager.</description>
+    <copyright>Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.Utils.dll" target="notlib\net45\Microsoft.Research.Peloponnese.Utils.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Utils.dll" target="notlib\net45\Microsoft.Research.Peloponnese.Utils.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Utils.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.Utils.pdb" />
+    <file src="Microsoft.Research.Peloponnese.Utils.targets" target="build\Microsoft.Research.Peloponnese.Utils.targets" />
+    <file src="Microsoft.Research.Peloponnese.Utils.props" target="build\Microsoft.Research.Peloponnese.Utils.props" />
+  </files>
+</package>

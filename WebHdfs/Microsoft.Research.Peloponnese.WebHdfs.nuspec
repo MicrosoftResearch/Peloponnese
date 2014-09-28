@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Research.Peloponnese.WebHdfs</id>
+    <version>0.8.0-beta</version>
+    <title>Peloponnese - WebHdfs client for lightweight process manager for YARN</title>
+    <authors>bigdatadev@microsoft.com</authors>
+    <owners>bigdatadev@microsoft.com,Microsoft</owners>
+    <licenseUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/Peloponnese_license.txt</licenseUrl>
+    <projectUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The WebHdfs client used by Peloponnese.</description>
+    <copyright>Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
+      <dependency id="Newtonsoft.Json" version="6.0.5" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.WebHdfs.dll" target="notlib\net40\Microsoft.Research.Peloponnese.WebHDfs.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.WebHdfs.dll" target="notlib\net40\Microsoft.Research.Peloponnese.WebHdfs.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.WebHdfs.pdb" target="notlib\net40\Microsoft.Research.Peloponnese.WebHdfs.pdb" />
+    <file src="Microsoft.Research.Peloponnese.WebHdfs.targets" target="build\Microsoft.Research.Peloponnese.WebHdfs.targets" />
+    <file src="Microsoft.Research.Peloponnese.WebHdfs.props" target="build\Microsoft.Research.Peloponnese.WebHdfs.props" />
+  </files>
+</package>

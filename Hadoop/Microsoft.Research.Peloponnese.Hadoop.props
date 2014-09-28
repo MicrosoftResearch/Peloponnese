@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="Microsoft.Research.Peloponnese.Hadoop" >
+      <HintPath>$(MSBuildThisFileDirectory)..\notlib\net40\Microsoft.Research.Peloponnese.Hadoop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.Peloponnese.HadoopBridge" >
+      <HintPath>$(MSBuildThisFileDirectory)..\notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.dll</HintPath>
+    </Reference>
+    <Content Include="$(MSBuildThisFileDirectory)..\notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)..\notlib\net40\Microsoft.Research.Peloponnese.YarnLauncher.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>$(MSBuildThisFileDirectory)..\notlib\net40;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(MSBuildThisFileDirectory)..\native\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Microsoft.Research.Peloponnese.HadoopBridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(MSBuildThisFileDirectory)..\native\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Microsoft.Research.Peloponnese.HadoopBridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,14 @@
+Debug/
+bin/
+x64/
+packages/
+HadoopBridge/Debug/
+HadoopBridge/x64/
+*.opensdf
+*.vcxproj.filters
+*.sdf
+*.v11.suo
+Server/obj/
+*.class
+*.vcxproj.user
+*.csproj.user

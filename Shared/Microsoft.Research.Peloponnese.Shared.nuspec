@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Research.Peloponnese.Shared</id>
+    <version>0.8.0-beta</version>
+    <title>Peloponnese - Shared classes for lightweight process manager for YARN</title>
+    <authors>bigdatadev@microsoft.com</authors>
+    <owners>bigdatadev@microsoft.com,Microsoft</owners>
+    <licenseUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/Peloponnese_license.txt</licenseUrl>
+    <projectUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The shared classes for minimal clients for HDFS and YARN, used by Peloponnese.</description>
+    <copyright>Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <dependencies></dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.Shared.dll" target="notlib\net40\Microsoft.Research.Peloponnese.Shared.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Shared.dll" target="notlib\net40\Microsoft.Research.Peloponnese.Shared.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Shared.pdb" target="notlib\net40\Microsoft.Research.Peloponnese.Shared.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.DependencyLister.dll" target="notlib\net40\Microsoft.Research.Peloponnese.Shared.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.DependencyLister.dll" target="notlib\net40\Microsoft.Research.Peloponnese.DependencyLister.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.DependencyLister.pdb" target="notlib\net40\Microsoft.Research.Peloponnese.DependencyLister.pdb" />
+    <file src="Microsoft.Research.Peloponnese.Shared.targets" target="build\Microsoft.Research.Peloponnese.Shared.targets" />
+    <file src="Microsoft.Research.Peloponnese.Shared.props" target="build\Microsoft.Research.Peloponnese.Shared.props" />
+  </files>
+</package>

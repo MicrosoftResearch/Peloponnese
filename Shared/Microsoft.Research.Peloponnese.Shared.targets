@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+   <SharedFiles Include="$(MSBuildThisFileDirectory)..\notlib\net40\*.*"  />
+  </ItemGroup>
+
+  <Target Name="CopySharedFiles" AfterTargets="AfterBuild">
+    <Copy
+        SourceFiles="@(SharedFiles)"
+        DestinationFolder="$(TargetDir)"
+        SkipUnchangedFiles="true"
+        />
+    <Message Text="Done copying Peloponnese Shared files..." />
+  </Target>
+</Project>

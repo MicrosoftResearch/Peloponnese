@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+   <AzureStorageFiles Include="$(MSBuildThisFileDirectory)..\notlib\net45\*.*"  />
+  </ItemGroup>
+
+  <Target Name="CopyStorageFiles" AfterTargets="AfterBuild">
+    <Copy
+        SourceFiles="@(AzureStorageFiles)"
+        DestinationFolder="$(TargetDir)"
+        SkipUnchangedFiles="true"
+        />
+    <Message Text="Done copying Peloponnese Azure Storage files..." />
+  </Target>
+</Project>

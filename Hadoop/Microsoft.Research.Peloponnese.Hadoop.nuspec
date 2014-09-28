@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Research.Peloponnese.Hadoop</id>
+    <version>0.8.0-beta</version>
+    <title>Peloponnese - Hadoop interop for lightweight process manager for YARN</title>
+    <authors>bigdatadev@microsoft.com</authors>
+    <owners>bigdatadev@microsoft.com,Microsoft</owners>
+    <licenseUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/Peloponnese_license.txt</licenseUrl>
+    <projectUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The JNI libraries and minimal clients for HDFS and YARN, used by Peloponnese.</description>
+    <copyright>Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="HadoopBridge\HdfsBridgeNative.h" target="native\include\HdfsBridgeNative.h" />
+    <file src="HadoopBridge\Hadoop.h" target="native\include\Hadoop.h" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.Hadoop.dll" target="notlib\net40\Microsoft.Research.Peloponnese.Hadoop.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Hadoop.dll" target="notlib\net40\Microsoft.Research.Peloponnese.Hadoop.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.Hadoop.pdb" target="notlib\net40\Microsoft.Research.Peloponnese.Hadoop.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.HadoopBridge.dll" target="notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.HadoopBridge.dll" target="notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.HadoopBridge.pdb" target="notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.pdb" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.HadoopBridge.lib" target="native\lib\Microsoft.Research.Peloponnese.HadoopBridge.lib" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.HadoopBridge.jar" target="notlib\net40\Microsoft.Research.Peloponnese.HadoopBridge.jar" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnLauncher.jar" target="notlib\net40\Microsoft.Research.Peloponnese.YarnLauncher.jar" />
+    <file src="Microsoft.Research.Peloponnese.Hadoop.targets" target="build\Microsoft.Research.Peloponnese.Hadoop.targets" />
+    <file src="Microsoft.Research.Peloponnese.Hadoop.props" target="build\Microsoft.Research.Peloponnese.Hadoop.props" />
+  </files>
+</package>

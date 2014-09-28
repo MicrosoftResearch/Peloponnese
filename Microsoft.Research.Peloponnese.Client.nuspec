@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Research.Peloponnese.Client</id>
+    <version>0.8.0-beta</version>
+    <title>Peloponnese - Client libraries for lightweight process manager for YARN</title>
+    <authors>bigdatadev@microsoft.com</authors>
+    <owners>bigdatadev@microsoft.com,Microsoft</owners>
+    <licenseUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/Peloponnese_license.txt</licenseUrl>
+    <projectUrl>http://research.microsoft.com/en-us/um/siliconvalley/projects/BigDataDev/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Client libraries for the Peloponnese Process Manager which can run processes locally, on a YARN cluster, or on an Azure hosted HDInsight cluster.</description>
+    <copyright>Microsoft Corporation</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.Research.Peloponnese.AzureStorage" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Hadoop" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Utils" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.WebHdfs" version="0.8.0-beta" />
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Data.Edm" version="5.6.2" />
+        <dependency id="Microsoft.Data.OData" version="5.6.2" />
+        <dependency id="Microsoft.Data.Services.Client" version="5.6.2" />
+        <dependency id="Microsoft.Hadoop.Client" version="1.3.1.6" />
+        <dependency id="Microsoft.Net.Http" version="2.2.28" />
+        <dependency id="Microsoft.WindowsAzure.Common" version="1.3.0" />
+        <dependency id="Microsoft.WindowsAzure.Common.Dependencies" version="1.1.0" />
+        <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="2.0.3" />
+        <dependency id="Microsoft.WindowsAzure.Management.HDInsight" version="1.3.1.6" />
+        <dependency id="Microsoft.WindowsAzure.Management.Storage" version="3.0.0" />
+        <dependency id="Newtonsoft.Json" version="6.0.5" />
+        <dependency id="System.Spatial" version="5.6.2" />
+        <dependency id="WindowsAzure.Storage" version="4.3.0" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.AzureCluster.dll" target="notlib\net45\Microsoft.Research.Peloponnese.AzureCluster.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.AzureCluster.dll" target="notlib\net45\Microsoft.Research.Peloponnese.AzureCluster.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.AzureCluster.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.AzureCluster.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.YarnCluster.dll" target="notlib\net45\Microsoft.Research.Peloponnese.YarnCluster.dll" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnCluster.dll" target="notlib\net45\Microsoft.Research.Peloponnese.YarnCluster.dll" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnCluster.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.YarnCluster.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.PersistentProcessManager.exe" target="notlib\net45\Microsoft.Research.Peloponnese.PersistentProcessManager.exe" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.PersistentProcessManager.exe" target="notlib\net45\Microsoft.Research.Peloponnese.PersistentProcessManager.exe" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.PersistentProcessManager.exe.config" target="notlib\net45\Microsoft.Research.Peloponnese.PersistentProcessManager.exe.config" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.PersistentProcessManager.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.PersistentProcessManager.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.AzureLogDumper.exe" target="notlib\net45\Microsoft.Research.Peloponnese.AzureLogDumper.exe" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.AzureLogDumper.exe" target="notlib\net45\Microsoft.Research.Peloponnese.AzureLogDumper.exe" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.AzureLogDumper.exe.config" target="notlib\net45\Microsoft.Research.Peloponnese.AzureLogDumper.exe.config" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.AzureLogDumper.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.AzureLogDumper.pdb" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.wrapper.cmd" target="notlib\net45\Microsoft.Research.Peloponnese.wrapper.cmd" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.YarnLauncher.exe" target="notlib\net45\Microsoft.Research.Peloponnese.YarnLauncher.exe" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnLauncher.exe" target="notlib\net45\Microsoft.Research.Peloponnese.YarnLauncher.exe" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnLauncher.exe.config" target="notlib\net45\Microsoft.Research.Peloponnese.YarnLauncher.exe.config" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnLauncher.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.YarnLauncher.pdb" />
+    <!-- file src="bin\signed\Microsoft.Research.Peloponnese.YarnMapLauncher.exe" target="notlib\net45\Microsoft.Research.Peloponnese.YarnMapLauncher.exe" /> -->
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnMapLauncher.exe" target="notlib\net45\Microsoft.Research.Peloponnese.YarnMapLauncher.exe" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnMapLauncher.exe.config" target="notlib\net45\Microsoft.Research.Peloponnese.YarnMapLauncher.exe.config" />
+    <file src="bin\Release\Microsoft.Research.Peloponnese.YarnMapLauncher.pdb" target="notlib\net45\Microsoft.Research.Peloponnese.YarnMapLauncher.pdb" />
+    <file src="Microsoft.Research.Peloponnese.Client.targets" target="build\Microsoft.Research.Peloponnese.Client.targets" />
+    <file src="Microsoft.Research.Peloponnese.Client.props" target="build\Microsoft.Research.Peloponnese.Client.props" />
+  </files>
+</package>

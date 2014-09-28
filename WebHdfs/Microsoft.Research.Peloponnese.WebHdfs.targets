@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+   <WebHdfsFiles Include="$(MSBuildThisFileDirectory)..\notlib\net40\*.*"  />
+  </ItemGroup>
+
+  <Target Name="CopyWebHdfsFiles" AfterTargets="AfterBuild">
+    <Copy
+        SourceFiles="@(WebHdfsFiles)"
+        DestinationFolder="$(TargetDir)"
+        SkipUnchangedFiles="true"
+        />
+    <Message Text="Done copying Peloponnese WebHdfs files..." />
+  </Target>
+</Project>
