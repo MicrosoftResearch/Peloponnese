@@ -31,6 +31,9 @@ using Microsoft.WindowsAzure.Management.HDInsight;
 using Microsoft.WindowsAzure.Management.Storage;
 using Microsoft.WindowsAzure.Management.Storage.Models;
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 namespace Microsoft.Research.Peloponnese.ClusterUtils
 {
     public class AzureCluster
@@ -222,7 +225,30 @@ namespace Microsoft.Research.Peloponnese.ClusterUtils
             string configDir = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
                 "Windows Azure Powershell");
-            string defaultFile = Path.Combine(configDir, "WindowsAzureProfile.xml");
+            string defaultFile = Path.Combine(configDir, "AzureProfile.json");
+            if (File.Exists(defaultFile))
+            {
+                using (FileStream s = new FileStream(defaultFile, FileMode.Open, FileAccess.Read))
+                {
+                    using (StreamReader sr = new StreamReader(s))
+                    {
+                        string doc = sr.ReadToEnd();
+                        try
+                        {
+                            JObject defaults = JObject.Parse(doc);
+                            JToken subs = defaults["Subscriptions"];
+                            foreach (JObject sub in subs)
+                            {
+                                string thumbprint = (string)sub["Account"];
+                                string subscriptionId = (string)sub["Id"];
+                                _subscriptions.Add(new AzureSubscription(subscriptionId, thumbprint));
+                            }
+                        }
+                        catch { /* swallow any exceptions so we just return null values */ }
+                    }
+                }
+            }
+            defaultFile = Path.Combine(configDir, "WindowsAzureProfile.xml");
             if (File.Exists(defaultFile))
             {
                 using (FileStream s = new FileStream(defaultFile, FileMode.Open, FileAccess.Read))

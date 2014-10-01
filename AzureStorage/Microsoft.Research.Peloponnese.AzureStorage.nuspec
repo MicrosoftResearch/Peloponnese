@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata minClientVersion="2.5">
     <id>Microsoft.Research.Peloponnese.AzureStorage</id>
-    <version>0.8.0-beta</version>
+    <version>0.8.1-beta</version>
     <title>Peloponnese - Azure storage interop for lightweight process manager for YARN</title>
     <authors>bigdatadev@microsoft.com</authors>
     <owners>bigdatadev@microsoft.com,Microsoft</owners>
@@ -14,8 +14,8 @@
     <language>en-US</language>
     <dependencies>
       <group targetFramework="net45-Client">
-        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
-        <dependency id="Microsoft.Research.Peloponnese.Utils" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.1-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Utils" version="0.8.1-beta" />
         <dependency id="Microsoft.Data.Edm" version="5.6.2" />
         <dependency id="Microsoft.Data.OData" version="5.6.2" />
         <dependency id="Microsoft.Data.Services.Client" version="5.6.2" />

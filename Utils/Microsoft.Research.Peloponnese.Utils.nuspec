@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata minClientVersion="2.5">
     <id>Microsoft.Research.Peloponnese.Utils</id>
-    <version>0.8.0-beta</version>
+    <version>0.8.1-beta</version>
     <title>Peloponnese - Utitity class for lightweight process manager for YARN</title>
     <authors>bigdatadev@microsoft.com</authors>
     <owners>bigdatadev@microsoft.com,Microsoft</owners>
@@ -14,7 +14,7 @@
     <language>en-US</language>
     <dependencies>
       <group targetFramework=".NETFramework4.5">
-        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.0-beta" />
+        <dependency id="Microsoft.Research.Peloponnese.Shared" version="0.8.1-beta" />
       </group>
     </dependencies>
     <frameworkAssemblies>
